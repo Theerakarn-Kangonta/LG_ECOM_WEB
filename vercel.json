@@ -2,14 +2,14 @@
     "version": 3,
     "builds": [
       {
-        "src": "dist/lg-ecom-web/server/main.js",
+        "src": "dist/lg-ecom-web/server/main.server.mjs",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "dist/lg-ecom-web/server/main.js"
+        "dest": "dist/lg-ecom-web/server/main.server.mjs"
       }
     ]
   }
